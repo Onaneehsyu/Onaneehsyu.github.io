@@ -43,21 +43,21 @@ body  {
 }
 @keyframes change {
     0%  {
-        background-image: url(../mini_project/images/minecraft.jpg);
+        background-image: url(images/minecraft.jpg);
     }
     20% {
-        background-image: url(../mini_project/images/terraria.jpg);
+        background-image: url(images/terraria.jpg);
     }
     40% {
-        background-image: url(../mini_project/images/stardew_valley.jpg);
+        background-image: url(images/stardew_valley.jpg);
     }
     60% {
-        background-image: url(../mini_project/images/minecraft.jpg);
+        background-image: url(images/minecraft.jpg);
     }
     80%    {
-        background-image: url(../mini_project/images/terraria.jpg);
+        background-image: url(images/terraria.jpg);
     }
     100%    {
-        background-image: url(../mini_project/images/stardew_valley.jpg);
+        background-image: url(images/stardew_valley.jpg);
     }
 }
