@@ -1,0 +1,63 @@
+body  {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100vh;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.welcome_page {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    position: relative;
+    background-image: url(../mini_project/images/minecraft.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+    justify-content: center;
+    animation: change 15s infinite ease-in-out;
+}
+.contents   {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.contents h1    {
+    font-size: 60px;
+    letter-spacing: 10px;
+    color: white;
+}
+.contents a {
+    background: blue;
+    color: white;
+    padding: 10px 25px;
+    text-decoration: none;
+    font-size: 18px;
+    border-radius: 20px;
+}
+.contents a:hover   {
+    background: lightblue;
+    color: blue;
+}
+@keyframes change {
+    0%  {
+        background-image: url(../mini_project/images/minecraft.jpg);
+    }
+    20% {
+        background-image: url(../mini_project/images/terraria.jpg);
+    }
+    40% {
+        background-image: url(../mini_project/images/stardew_valley.jpg);
+    }
+    60% {
+        background-image: url(../mini_project/images/minecraft.jpg);
+    }
+    80%    {
+        background-image: url(../mini_project/images/terraria.jpg);
+    }
+    100%    {
+        background-image: url(../mini_project/images/stardew_valley.jpg);
+    }
+}
