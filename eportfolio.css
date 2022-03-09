@@ -1,0 +1,178 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+body {
+    background: #ffffff;
+    /*background-image: url(images/kodego.jpg);
+    background-size: cover;
+    background-position: absolute;
+    background-repeat: no-repeat;*/
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+header {
+    position: fixed;
+    top: 0; left: 0; right: 0;
+    background: #1A2238;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+}
+.myName {
+    font-weight: bolder;
+    font-size: 25px;
+    color: #FF6A3D;
+    text-align: center;
+    text-decoration: none;
+}
+.myName:hover {
+    color: #FF6A3D;
+}
+.menubar {
+    background: #1A2238;
+    text-align: center;
+}
+.menubar ul {
+    display: inline-flex;
+    list-style: none;
+    color: white;
+}
+.menubar ul li {
+    width: 120px;
+    padding: 15px;
+    margin: 15px;
+}
+.menubar ul li a {
+    text-decoration: none;
+    color: #FF6A3D;
+}
+.active, .menubar ul li:hover {
+    background: #F4DB7D;
+    border-radius: 3px;
+}
+.subMenu {
+    display: none;
+}
+.menubar ul li:hover .subMenu {
+    display: block;
+    position: absolute;
+    background: #1A2238;
+    margin-top: 15px;
+    margin-left: -15px;
+}
+.menubar ul li:hover .subMenu ul {
+    display: block;
+    margin: 10px;
+}
+.menubar ul li:hover .subMenu ul li {
+    width: 150px;
+    padding: 10px;
+    border-bottom: 1px dotted #fff;
+    background: transparent;
+    border-radius: 0;
+    text-align: left;
+}
+.menubar ul li:hover .subMenu ul li:last-child {
+    border-bottom: 0;
+}
+.menubar ul li:hover .subMenu ul li a:hover {
+    color: #9DAAF2;
+}
+.subMenu2 {
+    display: none;
+}
+.innerMenu:hover .subMenu2 {
+    position: absolute;
+    display: block;
+    margin-top: -50px;
+    margin-left: 140px;
+    background: #1A2238;
+}
+.welcome {
+    padding: 20px;
+    padding-top: 130px;
+    color: #1A2238;
+}
+.contents {
+    padding: 50px;
+    padding-top: 200px;
+    align-items: center;
+    color: #1A2238;
+    font-size: 18px;
+    text-align: justify;
+}
+#welcome {
+    padding: 25px;
+    padding-bottom: 25px;
+}
+.opening {
+    background-image: url(images/greenfields2.jpg);
+    background-size: cover;
+    background-position: absolute;
+    background-repeat: no-repeat;
+    color: white;
+    padding: 50px;
+    align-items: center;
+    text-align: justify;
+}
+.opening img {
+    width: 400px;
+}
+.slider {
+    width: 500px;
+    height: 300px;
+    background-color: yellow;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 50px;
+    margin-top: 0px;
+    text-align: center;
+    overflow: hidden;
+}
+.image-container {
+    width: 2500px;
+    background-color: white;
+    height: 300px;
+    clear: both;
+    position: relative;
+    -webkit-transition: left 2s;
+    -moz-transition: left 2s;
+    -o-transition: left 2s;
+    transition: left 2s;
+}
+.slide {
+    float: left;
+    margin: 0px;
+    padding: 0px;
+    position: relative;
+}
+#slide-1:target ~ .image-container {
+    left: 0px;
+}
+#slide-2:target ~ .image-container {
+    left: -500px;
+}
+#slide-3:target ~ .image-container {
+    left: -1000px;
+}
+#slide-4:target ~ .image-container {
+    left: -1500px;
+}
+#slide-5:target ~ .image-container {
+    left: -2000px;
+}
+.buttons {
+    position: relative;
+    top: -20px;
+}
+.buttons a {
+    display: inline-block;
+    height: 15px;
+    width: 15px;
+    border-radius: 50px;
+    background-color: lightgreen;
+}
